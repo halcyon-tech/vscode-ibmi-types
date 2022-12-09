@@ -2,7 +2,7 @@
   "name": "vscode-ibmi-types",
   "version": "1.0.0",
   "description": "",
-  "typings": "./extension.d.ts",
+  "typings": "./typings.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/halcyon-tech/vscode-ibmi-types.git"
