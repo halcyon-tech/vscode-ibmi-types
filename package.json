@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/halcyon-tech/vscode-ibmi",
   "scripts": {
-    "prepublish": "rm -rf types/filesystems types/schemas types/views types/webviews types/languages",
+    "prepublish": "rm -rf filesystems schemas views webviews languages",
     "publish": "git add --all && git commit -m \"New stuff\" && git push"
   }
 }
