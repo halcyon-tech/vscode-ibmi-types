@@ -11,7 +11,7 @@ declare class IBMiContent {
      * @param {string} localPath
      */
     downloadStreamfile(remotePath: string, localPath?: string): Promise<string>;
-    writeStreamfile(originalPath: any, content: any): Promise<void | String | CommandResult>;
+    writeStreamfile(originalPath: any, content: any): Promise<void | String | import("../typings").CommandResult>;
     /**
      * Download the contents of a source member
      * @param {string|undefined} asp

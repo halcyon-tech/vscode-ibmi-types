@@ -12,5 +12,9 @@
   "bugs": {
     "url": "https://github.com/halcyon-tech/vscode-ibmi/issues"
   },
-  "homepage": "https://github.com/halcyon-tech/vscode-ibmi"
+  "homepage": "https://github.com/halcyon-tech/vscode-ibmi",
+  "scripts": {
+    "prepublish": "rm -rf types/filesystems types/schemas types/views types/webviews types/languages",
+    "publish": "git add --all && git commit -m \"New stuff\" && git push"
+  }
 }

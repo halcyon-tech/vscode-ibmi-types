@@ -1,6 +1,15 @@
 import * as vscode from "vscode";
 import * as node_ssh from "node-ssh";
 import { ConnectionConfiguration } from "./Configuration";
+import { ConnectionData, CommandData, StandardIO, CommandResult } from "../typings";
+interface MemberParts {
+    asp: string | undefined;
+    library: string | undefined;
+    file: string | undefined;
+    member: string | undefined;
+    extension: string | undefined;
+    basename: string | undefined;
+}
 export default class IBMi {
     client: node_ssh.NodeSSH;
     currentHost: string;
@@ -64,3 +73,4 @@ export default class IBMi {
      */
     sysNameInAmerican(string: string): string;
 }
+export {};

@@ -1,4 +1,5 @@
 import vscode from 'vscode';
+import { Server } from '../typings';
 export declare class ObjectBrowserProvider {
     private _attemptingConnection;
     private readonly _emitter;
